@@ -27,7 +27,7 @@
      *  hides the promo if cookie is set
      */
     function hidePromo() {
-
+        alert('here');
         var hidePromoCookieName = 'bnb_showpromo';
 
         var hidePromo = getCookie(hidePromoCookieName) || false;
@@ -52,6 +52,14 @@
         }
     }
 
+    /**
+     *  registers an eventlistener to elements with given classname
+     *
+     *  @param classname        classname of elements to bind eventlistener
+     *  @param event            name of event to bind listener to
+     *  @param cb               callback
+     *
+     */
     function registerEventlistener(classname, event, cb) {
         var elements = document.getElementsByClassName(classname);
 
