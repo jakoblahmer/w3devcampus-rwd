@@ -5,12 +5,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 14px;
 }
 
 /* wrapper to center content */
 .wrapper {
     width: 960px;
     margin: 2em auto;
+}
+
+/* row adoptions (each row should have a margin top) */
+.row {
+    margin-top: 1em;
 }
 
 /* header */
@@ -20,10 +26,46 @@ header {
 }
 
 /* menu */
-nav.menu {
-    
+nav ul {
+    border-radius: 5px;
+    background-color: #da622e;
+
+    li {
+        line-height: 2em;
+        padding: 0 0.5em;
+        border-top: 2px solid #216b9a;
+        
+        &:first-child {
+            border-top: 0px;
+        }
+
+        a {
+            display: block;
+            color: #fff;
+            &:hover {
+                color: darken(#fff, 10%);
+            }
+        }
+    }
 }
 
+/* main application */
+.application {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1em 1em 3em;
 
+}
 
+/* aside */
+.aside {
+    background-color: darken(#fff, 10%);
+    border-radius: 5px;
+    padding: 1em;
+
+    p {
+        font-size: 0.95em;
+        text-align: justify;
+    }
+}
 
