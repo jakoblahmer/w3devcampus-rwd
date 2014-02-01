@@ -38,13 +38,13 @@
 
             /* register eventlistener for close */
             registerEventlistener('promo-close', 'click', function(e) {
-                e.preventDefaults();
+                e.preventDefault();
                 document.getElementById('promo').style.display = "none";
             });
 
             /* register eventlistener for close and hide - not shown again for 1 day */
             registerEventlistener('promo-closehide', 'click', function(e) {
-                e.preventDefaults();
+                e.preventDefault();
                 setCookie(hidePromoCookieName, true, 1);
                 document.getElementById('promo').style.display = "none";
             });
