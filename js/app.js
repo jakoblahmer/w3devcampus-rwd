@@ -27,7 +27,7 @@
      *  hides the promo if cookie is set
      */
     function hidePromo() {
-        alert('here');
+        
         var hidePromoCookieName = 'bnb_showpromo';
 
         var hidePromo = getCookie(hidePromoCookieName) || false;
