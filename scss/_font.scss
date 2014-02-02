@@ -3,8 +3,13 @@
 /* font size */
 h1 {    font-size: 5em;     }
 h2 {    font-size: 2.5em;   }
-h3 {    font-size: 1.8em;     }
+h3 {    font-size: 1.8em;   }
 h4 {    font-size: 1.4em;   }
+
+h1.small {    font-size: 2.5em;     }
+h2.small {    font-size: 1.7em;   }
+h3.small {    font-size: 1.4em;   }
+h4.small {    font-size: 1.1em;   }
 
 h1,h2,h3,h4 {
     margin-bottom: 0.5em;
@@ -14,6 +19,11 @@ p {
     font-size: 1.1em;
     line-height: 1.4em;
     margin-bottom: 0.5em;
+}
+
+em {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 $link-color: #b65930;

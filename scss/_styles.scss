@@ -1,3 +1,8 @@
+/**
+ *  basic styling, does not include special handling for special sites
+ *
+ */
+
 
 /* body styling */
 body {
@@ -45,6 +50,11 @@ nav ul {
             &:hover {
                 color: darken(#fff, 10%);
             }
+
+            &.current {
+                color: darken(#216b9a, 20%);
+                font-weight: bold;
+            }
         }
     }
 }
@@ -68,6 +78,13 @@ nav ul {
     border-radius: 5px;
     padding: 1em 1em 3em;
 
+    /*** main application prices ***/
+    &.prices {
+        ul li {
+            line-height: 2em;
+        }
+    }
+
 }
 
 /* aside */
@@ -81,4 +98,18 @@ nav ul {
         text-align: justify;
     }
 }
+
+
+/* ul with style */
+ul.list-styled {
+    list-style: disc;
+    list-style-position: inside;
+
+    li {
+        line-height: 1.5em;
+    }
+}
+
+
+
 

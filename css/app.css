@@ -58,6 +58,18 @@ h3 {
 h4 {
   font-size: 1.4em; }
 
+h1.small {
+  font-size: 2.5em; }
+
+h2.small {
+  font-size: 1.7em; }
+
+h3.small {
+  font-size: 1.4em; }
+
+h4.small {
+  font-size: 1.1em; }
+
 h1, h2, h3, h4 {
   margin-bottom: 0.5em; }
 
@@ -65,6 +77,10 @@ p {
   font-size: 1.1em;
   line-height: 1.4em;
   margin-bottom: 0.5em; }
+
+em {
+  font-weight: bold;
+  font-size: 1.1em; }
 
 a {
   text-decoration: underline;
@@ -144,6 +160,18 @@ a {
 .col-12 {
   width: 99.6%; }
 
+/****
+ *  form styling
+ *
+ *
+ */
+fieldset.date label {
+  display: none; }
+
+/**
+ *  basic styling, does not include special handling for special sites
+ *
+ */
 /* body styling */
 body {
   background-image: url(../img/background.jpg);
@@ -181,6 +209,9 @@ nav ul {
       color: #fff; }
       nav ul li a:hover {
         color: #e6e6e6; }
+      nav ul li a.current {
+        color: #0f3146;
+        font-weight: bold; }
 
 /* promo */
 .promo {
@@ -195,7 +226,10 @@ nav ul {
 .application {
   background-color: #fff;
   border-radius: 5px;
-  padding: 1em 1em 3em; }
+  padding: 1em 1em 3em;
+  /*** main application prices ***/ }
+  .application.prices ul li {
+    line-height: 2em; }
 
 /* aside */
 .aside {
@@ -205,3 +239,10 @@ nav ul {
   .aside p {
     font-size: 0.95em;
     text-align: justify; }
+
+/* ul with style */
+ul.list-styled {
+  list-style: disc;
+  list-style-position: inside; }
+  ul.list-styled li {
+    line-height: 1.5em; }
