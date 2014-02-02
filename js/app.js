@@ -39,7 +39,7 @@
 
             // js available => show promo code on same page
             registerEventlistener('show-promo-info', 'click', function(e)   {
-                e.preventDefault();
+                if(e.preventDefault) e.preventDefault();
                 var promoInfo = document.getElementById('promo-info');
                 var promoTeaser = document.getElementById('promo-teaser');
                 
@@ -49,6 +49,7 @@
                 if(promoInfo) {
                     promoInfo.style.display = "block";
                 }
+                return false;
             });
             
             // js is available => show the close buttons
@@ -61,15 +62,17 @@
 
             /* register eventlistener for close */
             registerEventlistener('promo-close', 'click', function(e) {
-                e.preventDefault();
+                if(e.preventDefault) e.preventDefault();
                 document.getElementById('promo').style.display = "none";
+                return false;
             });
 
             /* register eventlistener for close and hide - not shown again for 1 day */
             registerEventlistener('promo-closehide', 'click', function(e) {
-                e.preventDefault();
+                if(e.preventDefault) e.preventDefault();
                 setCookie(hidePromoCookieName, true, 1);
                 document.getElementById('promo').style.display = "none";
+                return false;
             });
 
         }
