@@ -88,9 +88,11 @@
 
         for(var i=0; i < elements.length; i++) {
             if(elements[i]) {
-                //alert(elements[i]);
-                var elem = elements[i];
-                elem.addEventListener(event, cb);
+                if(!elements[i].addEventListener) {
+                    elements[i].attachEvent('on'+event, cb);
+                } else {
+                    elements[i].addEventListener(event, cb);
+                }
             }
         }
 
