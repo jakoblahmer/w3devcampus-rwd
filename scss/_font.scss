@@ -26,6 +26,20 @@ em {
     font-size: 1.1em;
 }
 
+/* class for screenreaders only 
+ * => inspired from bs3
+ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
 $link-color: #b65930;
 $link-color-light: #fff;
 

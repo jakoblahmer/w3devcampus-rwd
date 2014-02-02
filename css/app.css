@@ -82,6 +82,19 @@ em {
   font-weight: bold;
   font-size: 1.1em; }
 
+/* class for screenreaders only 
+ * => inspired from bs3
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
 a {
   text-decoration: underline;
   color: #b65930; }
@@ -159,14 +172,6 @@ a {
 
 .col-12 {
   width: 99.6%; }
-
-/****
- *  form styling
- *
- *
- */
-fieldset.date label {
-  display: none; }
 
 /**
  *  basic styling, does not include special handling for special sites

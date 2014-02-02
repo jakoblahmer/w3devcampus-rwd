@@ -18,6 +18,7 @@
             </header>
             <div class="row">
                 <nav class="col-2" role="navigation">
+                    <h2 class="sr-only">Menu</h2>
                     <ul id="menu">
                         <li><a class="light" href="index.html">Home</a></li>
                         <li><a class="light" href="rooms.html">Rooms</a></li>
@@ -28,7 +29,7 @@
                 </nav>
 
                 <main class="col-7" role="main">
-                    <div class="application contact" role="application">
+                    <section class="application contact" role="application">
                         <h2>Contact us</h2>
                         
                         <form name="contact-form" action="confirmation.html">
@@ -50,7 +51,7 @@
                                 <legend class="col-3">Arrival Date</legend>
                                 <div class="col-9">
                                     <div class="pull-left">
-                                        <label for="contact_arrival_date_month">Month</label>
+                                        <label class="sr-only" for="contact_arrival_date_month">Month</label>
                                         <select id="contact_arrival_date_month" name="arrival_date_month">
                                             <option selected="">Select Month</option>
                                             <option>Jan</option>
@@ -69,7 +70,7 @@
                                     </div><!-- /arrival_date_month -->
 
                                     <div class="pull-left">
-                                        <label for="contact_arrival_date_day">Day</label>
+                                        <label class="sr-only" for="contact_arrival_date_day">Day</label>
                                             <select id="contact_arrival_date_day" size="1" name="arrival_date_day">
                                                 <option selected="">Select Day</option>
                                                 <option>1</option>
@@ -107,7 +108,7 @@
                                     </div><!-- /arrival_date_day -->
 
                                     <div class="pull-left">
-                                        <label for="contact_arrival_date_year">Year</label>
+                                        <label class="sr-only" for="contact_arrival_date_year">Year</label>
                                         <select id="contact_arrival_date_year" name="arrival_date_year">
                                             <option selected="">Select year</option>
                                             <option>2011</option>
@@ -126,7 +127,7 @@
                                 <legend class="col-3">Departure Date</legend>
                                 <div class="col-9">
                                     <div class="pull-left">
-                                        <label for="contact_departure_date_month">Month</label>
+                                        <label class="sr-only" for="contact_departure_date_month">Month</label>
                                         <select id="contact_departure_date_month" name="departure_date_month">
                                             <option selected="">Select Month</option>
                                             <option>Jan</option>
@@ -145,7 +146,7 @@
                                     </div><!-- /departure_date_month -->
 
                                     <div class="pull-left">
-                                        <label for="contact_departure_date_day">Day</label>
+                                        <label class="sr-only" for="contact_departure_date_day">Day</label>
                                             <select id="contact_departure_date_day" size="1" name="departure_date_day">
                                                 <option selected="">Select Day</option>
                                                 <option>1</option>
@@ -183,7 +184,7 @@
                                     </div><!-- /departure_date_day -->
 
                                     <div class="pull-left">
-                                        <label for="contact_departure_date_year">Year</label>
+                                        <label class="sr-only" for="contact_departure_date_year">Year</label>
                                         <select id="contact_departure_date_year" name="departure_date_year">
                                             <option selected="">Select year</option>
                                             <option>2011</option>
@@ -216,7 +217,7 @@
 
                         </form><!-- /form -->
                         
-                    </div><!-- /application -->
+                    </section><!-- /application -->
                 </main> <!-- /main -->
 
                 <aside class="col-3" role="complementary">
