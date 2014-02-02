@@ -41,6 +41,7 @@ em {
 }
 
 $link-color: #b65930;
+$link-color-special: #922d01;
 $link-color-light: #fff;
 
 a {
@@ -57,6 +58,14 @@ a {
 
         &:hover {
             color: darken($link-color-light, 10%);
+        }
+    }
+
+    &.special {
+        color: $link-color-special;
+
+        &:hover {
+            color: darken($link-color-special, 10%);
         }
     }
 

@@ -8,7 +8,6 @@
 body {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
     background-size: cover;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 14px;
@@ -69,6 +68,18 @@ nav ul {
 
     .promo-links {
         display: none;
+    }
+
+    &.teaser {
+        #promo-info {
+            display: none;
+        }
+    }
+
+    &.info {
+        #promo-teaser {
+            display: none;
+        }
     }
 
 }

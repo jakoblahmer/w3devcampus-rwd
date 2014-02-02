@@ -105,6 +105,10 @@ a {
     color: white; }
     a.light:hover {
       color: #e6e6e6; }
+  a.special {
+    color: #922d01; }
+    a.special:hover {
+      color: #5f1d01; }
 
 /** simple GRID system **/
 /* float left / right */
@@ -181,7 +185,6 @@ a {
 body {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 14px; }
@@ -226,6 +229,10 @@ nav ul {
   padding: 1em;
   margin-bottom: 1em; }
   .promo .promo-links {
+    display: none; }
+  .promo.teaser #promo-info {
+    display: none; }
+  .promo.info #promo-teaser {
     display: none; }
 
 /* main application */

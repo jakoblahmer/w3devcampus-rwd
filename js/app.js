@@ -19,14 +19,14 @@
      */
     function init() {
         // hide promo stuff
-        hidePromo();
+        initPromo();
     }
 
 
     /**
      *  hides the promo if cookie is set
      */
-    function hidePromo() {
+    function initPromo() {
 
         var hidePromoCookieName = 'bnb_showpromo';
 
@@ -38,6 +38,20 @@
                 promo.style.display = "none";
             }
         } else {
+
+            // js available => show promo code on same page
+            registerEventlistener('show-promo-info', 'click', function(e)   {
+                e.preventDefault();
+                var promoInfo = document.getElementById('promo-info');
+                var promoTeaser = document.getElementById('promo-teaser');
+                
+                if(promoTeaser) {
+                    promoTeaser.style.display = "none";
+                }
+                if(promoInfo) {
+                    promoInfo.style.display = "block";
+                }
+            });
 
             // js is available => show the close buttons
             var promolinks = document.getElementsByClassName('promo-links');
