@@ -88,7 +88,9 @@
 
         for(var i=0; i < elements.length; i++) {
             if(elements[i]) {
-                elements[i].addEventListener(event, cb);
+                //alert(elements[i]);
+                var elem = elements[i];
+                elem.addEventListener(event, cb);
             }
         }
 
