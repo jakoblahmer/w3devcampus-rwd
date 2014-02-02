@@ -33,7 +33,10 @@
         var hidePromo = getCookie(hidePromoCookieName) || false;
 
         if(hidePromo) {
-            document.getElementById('promo').style.display = "none";
+            var promo = document.getElementById('promo');
+            if(promo) {
+                promo.style.display = "none";
+            }
         } else {
 
             // js is available => show the close buttons
