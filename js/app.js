@@ -27,7 +27,7 @@
      *  hides the promo if cookie is set
      */
     function hidePromo() {
-        
+
         var hidePromoCookieName = 'bnb_showpromo';
 
         var hidePromo = getCookie(hidePromoCookieName) || false;
@@ -35,6 +35,14 @@
         if(hidePromo) {
             document.getElementById('promo').style.display = "none";
         } else {
+
+            // js is available => show the close buttons
+            var promolinks = document.getElementsByClassName('promo-links');
+            for(var i=0; i < promolinks.length; i++) {
+                if(promolinks[i]) {
+                    promolinks[i].style.display = "block";
+                }
+            }
 
             /* register eventlistener for close */
             registerEventlistener('promo-close', 'click', function(e) {
