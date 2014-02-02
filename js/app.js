@@ -1,5 +1,4 @@
 
-
 (function() {
 
     // wait for document being loaded
@@ -40,6 +39,7 @@
         } else {
 
             // js available => show promo code on same page
+            /*
             registerEventlistener('show-promo-info', 'click', function(e)   {
                 e.preventDefault();
                 var promoInfo = document.getElementById('promo-info');
@@ -52,7 +52,7 @@
                     promoInfo.style.display = "block";
                 }
             });
-
+            */
             // js is available => show the close buttons
             var promolinks = document.getElementsByClassName('promo-links');
             for(var i=0; i < promolinks.length; i++) {
