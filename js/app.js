@@ -1,4 +1,3 @@
-
 (function() {
 
     // wait for document being loaded
@@ -39,7 +38,6 @@
         } else {
 
             // js available => show promo code on same page
-            /*
             registerEventlistener('show-promo-info', 'click', function(e)   {
                 e.preventDefault();
                 var promoInfo = document.getElementById('promo-info');
@@ -52,9 +50,9 @@
                     promoInfo.style.display = "block";
                 }
             });
-            */
+            
             // js is available => show the close buttons
-            var promolinks = document.getElementsByClassName('promo-links');
+            var promolinks = document.querySelectorAll('.promo-links');
             for(var i=0; i < promolinks.length; i++) {
                 if(promolinks[i]) {
                     promolinks[i].style.display = "block";
@@ -86,7 +84,7 @@
      *
      */
     function registerEventlistener(classname, event, cb) {
-        var elements = document.getElementsByClassName(classname);
+        var elements = document.querySelectorAll('.'+classname);
 
         for(var i=0; i < elements.length; i++) {
             if(elements[i]) {
