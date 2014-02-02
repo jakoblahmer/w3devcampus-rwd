@@ -33,16 +33,16 @@
                         
                         <form name="contact-form" action="confirmation.html">
                             <div class="row">
-                                <label class="col-3" for="name">Name</label>
+                                <label class="col-3" for="contact_name">Name</label>
                                 <div class="col-4">
-                                    <input placeholder="Max Mustermann" type="text" name="name" size="30">
+                                    <input id="contact_name" placeholder="Max Mustermann" type="text" name="name" size="30">
                                 </div>
                             </div><!-- /name -->
 
                             <div class="row">
-                                <label class="col-3" for="email">E-Mail</label>
+                                <label class="col-3" for="contact_email">E-Mail</label>
                                 <div class="col-4">
-                                    <input placeholder="m.mustermann@sample.com" type="email" name="email" size="30">
+                                    <input id="contact_email" placeholder="m.mustermann@sample.com" type="email" name="email" size="30">
                                 </div>
                             </div><!-- /email -->
 
@@ -50,8 +50,8 @@
                                 <legend class="col-3">Arrival Date</legend>
                                 <div class="col-9">
                                     <div class="pull-left">
-                                        <label for="arrival_date_month">Month</label>
-                                        <select name="arrival_date_month">
+                                        <label for="contact_arrival_date_month">Month</label>
+                                        <select id="contact_arrival_date_month" name="arrival_date_month">
                                             <option selected="">Select Month</option>
                                             <option>Jan</option>
                                             <option>Feb</option>
@@ -69,8 +69,8 @@
                                     </div><!-- /arrival_date_month -->
 
                                     <div class="pull-left">
-                                        <label for="arrival_date_day">Day</label>
-                                            <select size="1" name="arrival_date_day">
+                                        <label for="contact_arrival_date_day">Day</label>
+                                            <select id="contact_arrival_date_day" size="1" name="arrival_date_day">
                                                 <option selected="">Select Day</option>
                                                 <option>1</option>
                                                 <option>2</option>
@@ -107,8 +107,8 @@
                                     </div><!-- /arrival_date_day -->
 
                                     <div class="pull-left">
-                                        <label for="arrival_date_year">Year</label>
-                                        <select name="arrival_date_year">
+                                        <label for="contact_arrival_date_year">Year</label>
+                                        <select id="contact_arrival_date_year" name="arrival_date_year">
                                             <option selected="">Select year</option>
                                             <option>2011</option>
                                             <option>2012</option>
@@ -126,8 +126,8 @@
                                 <legend class="col-3">Departure Date</legend>
                                 <div class="col-9">
                                     <div class="pull-left">
-                                        <label for="departure_date_month">Month</label>
-                                        <select name="departure_date_month">
+                                        <label for="contact_departure_date_month">Month</label>
+                                        <select id="contact_departure_date_month" name="departure_date_month">
                                             <option selected="">Select Month</option>
                                             <option>Jan</option>
                                             <option>Feb</option>
@@ -145,8 +145,8 @@
                                     </div><!-- /departure_date_month -->
 
                                     <div class="pull-left">
-                                        <label for="departure_date_day">Day</label>
-                                            <select size="1" name="departure_date_day">
+                                        <label for="contact_departure_date_day">Day</label>
+                                            <select id="contact_departure_date_day" size="1" name="departure_date_day">
                                                 <option selected="">Select Day</option>
                                                 <option>1</option>
                                                 <option>2</option>
@@ -183,8 +183,8 @@
                                     </div><!-- /departure_date_day -->
 
                                     <div class="pull-left">
-                                        <label for="departure_date_year">Year</label>
-                                        <select name="departure_date_year">
+                                        <label for="contact_departure_date_year">Year</label>
+                                        <select id="contact_departure_date_year" name="departure_date_year">
                                             <option selected="">Select year</option>
                                             <option>2011</option>
                                             <option>2012</option>
@@ -199,9 +199,9 @@
                             </fieldset><!-- /departure_date -->
 
                             <div class="row">
-                                <label class="col-3" for="message">Message</label>
+                                <label class="col-3" for="contact_message">Message</label>
                                 <div class="col-4">
-                                    <textarea placeholder="Type here"></textarea>
+                                    <textarea id="contact_message" placeholder="Type here"></textarea>
                                 </div>
                             </div><!-- /message -->
 
