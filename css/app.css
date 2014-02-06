@@ -98,16 +98,16 @@ em {
 a {
   text-decoration: underline;
   color: #b65930; }
-  a:hover {
+  a:hover, a:focus, a:active {
     color: #8e4525;
     text-decoration: none; }
   a.light {
     color: white; }
-    a.light:hover {
+    a.light:hover, a.light:focus, a.light:active {
       color: #e6e6e6; }
   a.special {
     color: #922d01; }
-    a.special:hover {
+    a.special:hover, a.special:focus, a.special:active {
       color: #5f1d01; }
 
 /** simple GRID system **/
@@ -139,7 +139,8 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   float: left;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
 
 .col-1 {
   width: 8.3%; }

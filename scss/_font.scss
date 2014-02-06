@@ -48,7 +48,7 @@ a {
     text-decoration: underline;
     color: $link-color;
     
-    &:hover {
+    &:hover, &:focus, &:active {
         color: darken($link-color, 10%);
         text-decoration: none;
     }
@@ -56,7 +56,7 @@ a {
     &.light {
         color: $link-color-light;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             color: darken($link-color-light, 10%);
         }
     }
@@ -64,7 +64,7 @@ a {
     &.special {
         color: $link-color-special;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             color: darken($link-color-special, 10%);
         }
     }
