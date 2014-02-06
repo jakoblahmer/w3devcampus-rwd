@@ -1,4 +1,4 @@
-w3devcampus-rwd-a1
+w3devcampus-rwd
 ==================
 
-Responsive Web Design Jan14, Assignment 1
+Responsive Web Design Jan14, Assignments
