@@ -1,0 +1,73 @@
+
+
+/* font size */
+h1 {    font-size: 5em;     }
+h2 {    font-size: 2.5em;   }
+h3 {    font-size: 1.8em;   }
+h4 {    font-size: 1.4em;   }
+
+h1.small {    font-size: 2.5em;     }
+h2.small {    font-size: 1.7em;   }
+h3.small {    font-size: 1.4em;   }
+h4.small {    font-size: 1.1em;   }
+
+h1,h2,h3,h4 {
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+em {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* class for screenreaders only 
+ * => inspired from bs3
+ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+$link-color: #b65930;
+$link-color-special: #922d01;
+$link-color-light: #fff;
+
+a {
+    text-decoration: underline;
+    color: $link-color;
+    
+    &:hover {
+        color: darken($link-color, 10%);
+        text-decoration: none;
+    }
+
+    &.light {
+        color: $link-color-light;
+
+        &:hover {
+            color: darken($link-color-light, 10%);
+        }
+    }
+
+    &.special {
+        color: $link-color-special;
+
+        &:hover {
+            color: darken($link-color-special, 10%);
+        }
+    }
+
+}
+

@@ -1,0 +1,261 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* font size */
+h1 {
+  font-size: 5em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.4em; }
+
+h1.small {
+  font-size: 2.5em; }
+
+h2.small {
+  font-size: 1.7em; }
+
+h3.small {
+  font-size: 1.4em; }
+
+h4.small {
+  font-size: 1.1em; }
+
+h1, h2, h3, h4 {
+  margin-bottom: 0.5em; }
+
+p {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin-bottom: 0.5em; }
+
+em {
+  font-weight: bold;
+  font-size: 1.1em; }
+
+/* class for screenreaders only 
+ * => inspired from bs3
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+a {
+  text-decoration: underline;
+  color: #b65930; }
+  a:hover {
+    color: #8e4525;
+    text-decoration: none; }
+  a.light {
+    color: white; }
+    a.light:hover {
+      color: #e6e6e6; }
+  a.special {
+    color: #922d01; }
+    a.special:hover {
+      color: #5f1d01; }
+
+/** simple GRID system **/
+/* float left / right */
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  box-sizing: border-box; }
+
+.col-1 {
+  width: 8.3%; }
+
+.col-2 {
+  width: 16.6%; }
+
+.col-3 {
+  width: 24.9%; }
+
+.col-4 {
+  width: 33.2%; }
+
+.col-5 {
+  width: 41.5%; }
+
+.col-6 {
+  width: 49.8%; }
+
+.col-7 {
+  width: 58.1%; }
+
+.col-8 {
+  width: 66.4%; }
+
+.col-9 {
+  width: 74.7%; }
+
+.col-10 {
+  width: 83%; }
+
+.col-11 {
+  width: 91.3%; }
+
+.col-12 {
+  width: 99.6%; }
+
+/**
+ *  basic styling, does not include special handling for special sites
+ *
+ */
+/* body styling */
+body {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px; }
+
+/* wrapper to center content */
+.wrapper {
+  width: 960px;
+  margin: 2em auto; }
+
+/* row adoptions (each row should have a margin top) */
+.row {
+  margin-top: 1em; }
+
+/* header */
+header {
+  text-align: center;
+  color: #fff; }
+
+/* menu */
+nav ul {
+  border-radius: 5px;
+  background-color: #da622e; }
+  nav ul li {
+    line-height: 2em;
+    padding: 0 0.5em;
+    border-top: 2px solid #216b9a; }
+    nav ul li:first-child {
+      border-top: 0px; }
+    nav ul li a {
+      display: block;
+      color: #fff; }
+      nav ul li a:hover {
+        color: #e6e6e6; }
+      nav ul li a.current {
+        color: #0f3146;
+        font-weight: bold; }
+
+/* promo */
+.promo {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em; }
+  .promo .promo-links {
+    display: none; }
+  .promo.teaser #promo-info {
+    display: none; }
+  .promo.info #promo-teaser {
+    display: none; }
+
+/* main application */
+.application {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1em 1em 3em;
+  /*** main application prices ***/ }
+  .application.prices ul li {
+    line-height: 2em; }
+
+/* aside */
+.aside {
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  padding: 1em; }
+  .aside p {
+    font-size: 0.95em;
+    text-align: justify; }
+
+/* ul with style */
+ul.list-styled {
+  list-style: disc;
+  list-style-position: inside; }
+  ul.list-styled li {
+    line-height: 1.5em; }
