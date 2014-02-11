@@ -5,12 +5,24 @@
 // scss mixins
 @import "mixins";
 
-// font styling
+// 1col layout
 @import "font";
 
-// basic layout
-@import "layout";
+// 1col layout
+@import "1col";
 
-// special styling
-@import "styles"
+@media all and (min-width: 37em) {
+    @import "2col";
+}
 
+@media all and (min-width: 50em) {
+    @import "3col";
+}
+
+@media all and (min-width: 75em) {
+    .wrapper {
+        width: 80%;
+        max-width: 85em;
+        margin: 0 auto;
+    }
+}

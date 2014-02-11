@@ -1,0 +1,10 @@
+A1 Feedback:
+
+    - I also wonder why wrapper has a width in px, in this assignment I like to see relative values where ever this has a duty, and I don't see what is the benefit for wrapper to have a static width.
+
+    - Good you took the table out for the prices, only, as it is now I miss the relation between the different rooms since they are in separate sections. In my opinion better consider a description list.
+
+    - The form, I notice that all input elements are inside a div, why?
+
+    - Can you please be kind and for next assignment remove all CSS that has no duty in this assignment?
+

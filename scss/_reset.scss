@@ -45,3 +45,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+div, aside, section, article, nav, main {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
