@@ -173,21 +173,20 @@ section, aside {
     margin: 2em 0; }
 
   nav {
-    width: 12em;
+    width: 26%;
     float: left; }
 
   main, aside {
-    margin-left: 13em; } }
+    margin-left: 27%; } }
 @media all and (min-width: 50em) {
   .subwrapper {
     float: left;
     margin-right: 2%;
-    width: 80%; }
+    width: 75%; }
 
   aside {
-    float: right;
-    margin: 0;
-    width: 18%; } }
+    margin-left: 75.7%;
+    clear: none; } }
 @media all and (min-width: 75em) {
   .wrapper {
     width: 80%;
