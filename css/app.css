@@ -157,7 +157,8 @@ section, aside {
   border-radius: 5px;
   padding: 1em 1em;
   margin: 0 0 2em;
-  /* special promo styling */ }
+  /* promo styling */
+  /* prices styling */ }
   section.promo, aside.promo {
     text-align: justify; }
     section.promo .promo-links, aside.promo .promo-links {
@@ -166,6 +167,12 @@ section, aside {
       display: none; }
     section.promo.info #promo-teaser, aside.promo.info #promo-teaser {
       display: none; }
+  section.prices dl, aside.prices dl {
+    line-height: 1.5em; }
+    section.prices dl dt, aside.prices dl dt {
+      margin-top: 0.5em; }
+    section.prices dl dd, aside.prices dl dd {
+      padding-left: 2em; }
 
 @media all and (min-width: 37em) {
   /** 2 and 3 col layout **/
@@ -177,17 +184,22 @@ section, aside {
     float: left; }
 
   main, aside {
-    margin-left: 27%; } }
+    margin-left: 27%; }
+
+  section.prices dl {
+    margin: 0 auto;
+    width: 80%; } }
 @media all and (min-width: 50em) {
   .subwrapper {
     float: left;
-    margin-right: 2%;
     width: 75%; }
 
   aside {
-    margin-left: 75.8%;
-    clear: none; } }
+    margin-left: 75.8%; } }
 @media all and (min-width: 75em) {
+  /*
+   *  fix width on big screen
+   */
   .wrapper {
     width: 80%;
     max-width: 85em;

@@ -20,9 +20,5 @@
 }
 
 @media all and (min-width: 75em) {
-    .wrapper {
-        width: 80%;
-        max-width: 85em;
-        margin: 0 auto;
-    }
+    @import "large";
 }

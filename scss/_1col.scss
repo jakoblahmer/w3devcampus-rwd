@@ -57,7 +57,7 @@ section, aside {
     padding: 1em 1em;
     margin: 0 0 2em;
 
-    /* special promo styling */
+    /* promo styling */
     &.promo {
         text-align: justify;
         .promo-links {
@@ -75,6 +75,23 @@ section, aside {
                 display: none;
             }
         }
+    }
+
+    /* prices styling */
+    &.prices {
+
+        dl {
+            line-height: 1.5em;
+
+            dt {
+                margin-top: 0.5em;
+            }
+
+            dd {
+                padding-left: 2em;
+            }
+        }
+
     }
 }
 
