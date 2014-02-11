@@ -18,3 +18,17 @@ section.prices dl {
     margin: 0 auto;
     width: 80%;
 }
+
+label, legend {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.fullwidth {
+    width: 60%;
+}
+
+.nolabel {
+    margin-left: 33%;
+}
