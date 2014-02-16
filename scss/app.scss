@@ -11,14 +11,34 @@
 // 1col layout
 @import "1col";
 
+// 1col nav
+@media only screen and ( max-width: 37em )  {
+    @import "1colnav";
+}
+
+// 2col layout
 @media all and (min-width: 37em) {
     @import "2col";
 }
 
+// 3col layout
 @media all and (min-width: 50em) {
     @import "3col";
 }
 
+// large layout
 @media all and (min-width: 75em) {
     @import "large";
+}
+
+// special retina
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    @import "retina";
 }

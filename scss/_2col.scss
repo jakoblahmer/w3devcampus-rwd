@@ -1,5 +1,9 @@
 /** 2 and 3 col layout **/
 
+body {
+    @include background-image("../img/background2col.jpg");
+}
+
 header {
     margin: 2em 0;
 }

@@ -1,4 +1,9 @@
 
+/** 3 col laybout **/
+
+body {
+    @include background-image("../img/background3col.jpg");
+}
 
 .subwrapper {
     float: left;
