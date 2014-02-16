@@ -55,6 +55,7 @@ div, aside, section, article, nav, main {
 .pull-left {
   float: left; }
 
+/* transition mixin */
 /* font size */
 h1 {
   font-size: 180%; }
@@ -131,11 +132,14 @@ header {
   color: #fff; }
 
 /* menu */
+nav > a {
+  display: none; }
 nav ul {
   border-radius: 5px;
   background-color: #da622e;
   text-align: center;
-  margin: 0 0 2em; }
+  margin: 0 0 2em;
+  clear: both; }
   nav ul li {
     line-height: 2em;
     padding: 0 0.5em;
@@ -212,6 +216,77 @@ input[type="reset"] {
 select {
   height: 2em; }
 
+@media only screen and (max-width: 37em) {
+  nav {
+    overflow: hidden;
+    /* nav targetted */
+    /* nav not targetted */ }
+    nav > a {
+      float: right;
+      font-size: 1.3em;
+      background: #fff;
+      border-radius: 0.2em;
+      padding: 0 0.5em;
+      margin: 0 0 0.5em; }
+    nav:target {
+      height: 15.5em;
+      -webkit-transition: height 1s ease-in-out;
+      -moz-transition: height 1s ease-in-out;
+      -ms-transition: height 1s ease-in-out;
+      -o-transition: height 1s ease-in-out;
+      transition: height 1s ease-in-out; }
+      nav:target > a {
+        display: none; }
+        nav:target > a.hide {
+          display: block; }
+    nav:not(:target) {
+      height: 3.2em;
+      -webkit-transition: height 1s ease-in-out;
+      -moz-transition: height 1s ease-in-out;
+      -ms-transition: height 1s ease-in-out;
+      -o-transition: height 1s ease-in-out;
+      transition: height 1s ease-in-out; }
+      nav:not(:target) > a {
+        display: block; }
+        nav:not(:target) > a.hide {
+          display: none; }
+    nav > a {
+      line-height: 2em; } }
+    /*
+
+    #nav
+    {
+    }
+        #nav > a
+        {
+            display: none;
+        }
+        #nav:not( :target ) > a:first-of-type,
+        #nav:target > a:last-of-type
+        {
+            display: block;
+        }
+
+    /* first level *
+
+    #nav > ul
+    {
+        height: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+        #nav > ul.active
+        {
+            display: block;
+        }
+        #nav > ul > li
+        {
+            width: 100%;
+            float: none;
+        }
+    */
 @media all and (min-width: 37em) {
   /** 2 and 3 col layout **/
   header {

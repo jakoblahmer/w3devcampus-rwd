@@ -15,13 +15,19 @@
     </head>
     <body>
         <div class="wrapper">
-            <header role="banner">
+            <header id="header" role="banner">
                 <h1>Canal View B &amp; B</h1>
             </header>
             <div class="subwrapper">
-                <nav role="navigation">
+                <nav id="nav" role="navigation">
                     <h2 class="sr-only">Menu</h2>
-                    <ul id="menu">
+                    <!-- show menu link -->
+                    <a href="#nav" title="Menu show"><span class="sr-only">show</span> Menu ≡</a>
+                    <!-- hide menu link -->
+                    <a href="#header" class="hide" title="Menu hide"><span class="sr-only">hide</span> Menu ≡</a>
+                    
+                    <!-- menu -->
+                    <ul id="menu clearfix">
                         <li><a class="light" href="index.html">Home</a></li>
                         <li><a class="light" href="rooms.html">Rooms</a></li>
                         <li><a class="light" href="prices.html">Prices</a></li>
@@ -30,7 +36,7 @@
                     </ul>
                 </nav>
 
-                <main role="main">
+                <main id="main" role="main">
                     <section class="application contact">
                         <h2>Contact us</h2>
                         
