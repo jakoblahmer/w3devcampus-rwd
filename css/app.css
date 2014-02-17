@@ -118,7 +118,7 @@ a {
 
 /* body styling */
 body {
-  background: url("../img/background1col.jpg") no-repeat top center fixed;
+  background: #155b96 url("../img/background1col.jpg") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,7 +261,7 @@ select {
 @media all and (min-width: 37em) {
   /** 2 and 3 col layout **/
   body {
-    background: url("../img/background2col.jpg") no-repeat top center fixed;
+    background: #155b96 url("../img/background2col.jpg") no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -294,7 +294,7 @@ select {
 @media all and (min-width: 50em) {
   /** 3 col laybout **/
   body {
-    background: url("../img/background3col.jpg") no-repeat top center fixed;
+    background: #155b96 url("../img/background3col.jpg") no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -316,7 +316,7 @@ select {
     margin: 0 auto; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   body {
-    background: url("../img/background3col.jpg") no-repeat top center fixed;
+    background: #155b96 url("../img/background3col.jpg") no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

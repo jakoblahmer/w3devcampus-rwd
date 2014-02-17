@@ -36,8 +36,8 @@
   transition: $transition-property $transition-time $method;
 }
 
-@mixin background-image($image) {
-  background: url($image) no-repeat top center fixed;
+@mixin background-image($image, $color: #155b96) {
+  background: $color url($image) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
