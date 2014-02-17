@@ -18,6 +18,11 @@ p {
     font-size: 1.1em;
     line-height: 1.4em;
     margin-bottom: 0.5em;
+
+    /* prevent image to be bigger than container */
+    &.responsive-image-container {
+        overflow: hidden;
+    }
 }
 
 em {

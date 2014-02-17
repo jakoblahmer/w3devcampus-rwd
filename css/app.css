@@ -82,7 +82,10 @@ h1, h2, h3 {
 p {
   font-size: 1.1em;
   line-height: 1.4em;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  /* prevent image to be bigger than container */ }
+  p.responsive-image-container {
+    overflow: hidden; }
 
 em {
   font-weight: bold;
@@ -179,9 +182,6 @@ section, aside {
       margin-top: 0.5em; }
     section.prices dl dd, aside.prices dl dd {
       padding-left: 2em; }
-  section.application, aside.application {
-    /* prevent image to be bigger than container */
-    overflow: hidden; }
 
 /* form styling */
 form ul li {
